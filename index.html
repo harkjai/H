@@ -3,80 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><h1 style="font-size: 50px;">werx</h1> Privacy Policy</title>
+<title>werx — private AI assistant for your own calendar and email</title>
+<meta name="description" content="werx is a private, personal AI tool that reads your own Google calendar and email so you can ask questions about them. Single user, no accounts, no third-party data sharing.">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem;
-         color: #1a1a1a; background: #fff; }
-  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
+         line-height: 1.65; max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem;
+         color: #16161a; background: #fff; }
+  h1 { font-size: 1.9rem; margin-bottom: 0.2rem; letter-spacing: -0.01em; }
+  .tagline { color: #55565a; font-size: 1.05rem; margin-top: 0; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
   ul { padding-left: 1.25rem; }
-  li { margin-bottom: 0.4rem; }
+  li { margin-bottom: 0.45rem; }
   code { background: #f4f4f5; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
-  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e4e4e7;
-           font-size: 0.9rem; color: #666; }
+  .note { background: #f7f7f8; border-left: 3px solid #b9bac0;
+          padding: 0.9rem 1.1rem; margin: 1.25rem 0; border-radius: 0 4px 4px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid #e4e4e7; vertical-align: top; }
+  th { font-weight: 600; background: #fafafa; }
+  a.policy { display: inline-block; margin-top: 0.5rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e4e7;
+           font-size: 0.9rem; color: #6b6c70; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="updated">Last updated: 8 October 2026</p>
+<h1>werx</h1>
+<p class="tagline">A private AI assistant that reads your own calendar and email, so you can
+ask questions about them in plain language.</p>
 
-<h2>Who runs werx</h2>
-<p>
-  This is a personal, private software tool operated by a single individual
-  (Damian Foo). It is not a business, product, or service offered to the public.
-  It has no users other than its owner.
-</p>
+<div class="note">
+  <strong>This is a personal tool, not a service.</strong> It has one user &mdash; its owner.
+  There is no sign-up, no public access, and no third party who can reach your data.
+</div>
 
 <h2>What it does</h2>
+
 <p>
-  werx connects to the owner's own Google account so that a personal AI
-  assistant can read their calendar and email on their behalf — for example, to
-  answer questions about upcoming appointments or to summarise unread messages.
+  werx connects to your Google account using Google's official OAuth
+  sign-in. Once authorised, you can ask things like:
 </p>
 
-<h2>What data it accesses</h2>
-<p>
-  Access is limited to the owner's own Google account. werx requests the
-  minimum permissions needed for those two functions:
-</p>
 <ul>
-  <li><strong>Google Calendar</strong> — to view events</li>
-  <li><strong>Gmail</strong> — to search and read messages</li>
+  <li>&ldquo;What's on my calendar this week?&rdquo;</li>
+  <li>&ldquo;Do I have anything to do today?&rdquo;</li>
+  <li>&ldquo;Summarise the mail I haven't read.&rdquo;</li>
+  <li>&ldquo;When is my next appointment that needs travel time?&rdquo;</li>
 </ul>
+
 <p>
-  It does not access contacts, Google Drive, Google Docs, Google Sheets, or any
-  other Google service. No data is shared with, sold to, or transmitted to any
-  third party.
+  The assistant answers using your real calendar and inbox, rather than relying on
+  memory or on you re-typing what you already keep in Google.
 </p>
 
-<h2>How data is handled</h2>
+<h2>Why it needs access, and how little it uses</h2>
+
 <p>
-  Calendar and email data is processed in memory on the owner's private
-  computer, used to answer the owner's questions, and then discarded. It is not
-  retained in any database, not used for advertising or analytics, and not used
-  to train any machine learning model.
+  Reading your calendar and inbox requires two permissions from Google. It asks for
+  nothing else:
 </p>
 
-<h2>Storage and security</h2>
+<table>
+  <tr><th>Permission</th><th>Why it is needed</th></tr>
+  <tr><td><code>calendar</code></td><td>Read events so it can answer questions about your schedule</td></tr>
+  <tr><td><code>gmail.readonly</code></td><td>Search and read messages so it can find mail you haven't dealt with</td></tr>
+</table>
+
 <p>
-  An OAuth access token is stored on the owner's private computer so the app can
-  operate without repeated logins. That token is protected by the operating
-  system's file permissions and is never transmitted anywhere other than Google's
-  own authentication servers.
+  It does <strong>not</strong> request access to Contacts, Drive, Docs, Sheets, or
+  any other Google service. It cannot send email on your behalf, delete messages,
+  or modify anything in your account. It is read-only by design.
+</p>
+
+<h2>How your data is handled</h2>
+
+<ul>
+  <li>Calendar and email data is processed in memory on the owner's own computer
+      and then discarded.</li>
+  <li>Nothing is written to a database, sold, shared, or used for advertising.</li>
+  <li>No data is used to train any machine learning model.</li>
+  <li>An OAuth token is stored locally so the tool does not ask you to log in
+      every time. It is protected by normal file permissions and is only ever sent
+      to Google's own authentication servers.</li>
+</ul>
+
+<h2>Where it runs</h2>
+
+<p>
+  The assistant runs on a personal home server, and is reachable only by its owner.
+  Only the Google account connection itself relies on Google's servers, which is
+  how any Google sign-in works.
 </p>
 
 <h2>Contact</h2>
+
 <p>
-  Questions about this policy can be sent to
+  This project is run by Damian Foo. Questions and bug reports are welcome at
   <a href="mailto:damian@blasko.co">damian@blasko.co</a>.
 </p>
 
+<a class="policy" href="/privacy.html">Read the full privacy policy &rarr;</a>
+
 <footer>
-  <p>This policy applies only to this werx. It is not the privacy policy of any
-  website or service operated under the same domain.</p>
+  <p>werx is a private personal tool. It is not affiliated with, endorsed by,
+  or supported by Google.</p>
 </footer>
 
 </body>
